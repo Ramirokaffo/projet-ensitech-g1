@@ -1,57 +1,935 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="../base/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../base/css/style.css">
+
+
 </head>
+
 <body class="row vh-100 m-0 p-0">
 
-    <section class="side_bar col-2 d-flex flex-column px-0">
-        <!-- À ne pas modifier -->
-         <div class="logo-div d-flex flex-column align-items-center gap-3 py-4">
-            <div class="logo_ensitech" style="background-image: url('../base/img/ensitech_logo.jpeg');"></div>
-            <h3 class="text-white">Ensitech</h3>
-         </div>
-         <div class="side_bar_link p-4">
-            <ul class="list-unstyled">
-                <li class="text-white"><a href="../base/index.html" class="p-2 d-flex text-decoration-none justify-content-between rounded"><span class="d-flex gap-3"><i class="bi bi-house"></i>Accueil</span></a></li>
-                <li class="text-white"><a href="#" class="p-2 d-flex text-decoration-none justify-content-between rounded"><span class="d-flex gap-3"><i class="bi bi-people"></i>Enseignant</span></a></li>
-                <li class="text-white"><a href="../etudiant/index.html" class="p-2 d-flex text-decoration-none justify-content-between rounded active-sibar-item"><span class="d-flex gap-3"><i class="bi bi-mortarboard"></i>Étudiant</span><i class="bi bi-caret-right-fill my-arrow"></i></a></li>
-                <li class="text-white"><a href="../cours/index.html" class="p-2 d-flex text-decoration-none justify-content-between rounded"><span class="d-flex gap-3"><i class="bi bi-journal-text"></i>Cours</span></a></li>
-            </ul>
-         </div>
-    </section>
+  <section class="side_bar col-2 d-flex flex-column px-0">
+    <!-- À ne pas modifier -->
+    <div class="logo-div d-flex flex-column align-items-center gap-3 py-4">
+      <div class="logo_ensitech" style="background-image: url('../base/img/ensitech_logo.jpeg');"></div>
+      <h3 class="text-white">Ensitech</h3>
+    </div>
+    <div class="side_bar_link p-4">
+      <ul class="list-unstyled">
+        <li class="text-white"><a href="../base/index.html"
+            class="p-2 d-flex text-decoration-none justify-content-between rounded"><span class="d-flex gap-3"><i
+                class="bi bi-house"></i>Accueil</span></a></li>
+        <li class="text-white"><a href="#" class="p-2 d-flex text-decoration-none justify-content-between rounded"><span
+              class="d-flex gap-3"><i class="bi bi-people"></i>Enseignant</span></a></li>
+        <li class="text-white"><a href="../etudiant/index.html"
+            class="p-2 d-flex text-decoration-none justify-content-between rounded active-sibar-item"><span
+              class="d-flex gap-3"><i class="bi bi-mortarboard"></i>Étudiant</span><i
+              class="bi bi-caret-right-fill my-arrow"></i></a></li>
+        <li class="text-white"><a href="../cours/index.html"
+            class="p-2 d-flex text-decoration-none justify-content-between rounded"><span class="d-flex gap-3"><i
+                class="bi bi-journal-text"></i>Cours</span></a></li>
+      </ul>
+    </div>
+  </section>
 
-    <section class="col-10">
-        <header class="d-flex justify-content-end gap-3 p-2">
-        <div class="dropdown me-1 p-0 m-0 bg-transparent">
-            <button type="button" class="btn bg-transparent p-0 m-0 d-flex align-items-center gap-2" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
-                <span class="h4 m-0 p-0">Jean Tchinda</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="black" class="bi bi-gear-fill" viewBox="0 0 16 16">
-                    <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
-                  </svg>
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-              <li><a class="dropdown-item d-flex gap-2" href="#"><i class="bi bi-person"></i>Profil</a></li>
-              <li><a class="dropdown-item d-flex gap-2" href="#"><i class="bi bi-box-arrow-right"></i>Déconnexion</a></li>
-            </ul>
+  <section class="col-10">
+    <header class="d-flex justify-content-end gap-3 p-2">
+      <div class="dropdown me-1 p-0 m-0 bg-transparent">
+        <button type="button" class="btn bg-transparent p-0 m-0 d-flex align-items-center gap-2" id="dropdownMenuOffset"
+          data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
+          <span class="h4 m-0 p-0">Jean Tchinda</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="black" class="bi bi-gear-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+          </svg>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+          <li><a class="dropdown-item d-flex gap-2" href="#"><i class="bi bi-person"></i>Profil</a></li>
+          <li><a class="dropdown-item d-flex gap-2" href="#"><i class="bi bi-box-arrow-right"></i>Déconnexion</a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- Contenu du document à modifier -->
+    <main class="container my-5">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2>Ajouter étudiant</h2>
+        <button class="btn btn-primary">Ajouter étudiant</button>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <ul class="nav nav-tabs mb-4">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Manuellement</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Importer CSV</a>
+            </li>
+          </ul>
+          <form id="manual-form">
+            <div class="row mb-3">
+              <div class="col">
+                <label for="nom" class="form-label">Nom</label>
+                <input type="text" class="form-control" id="nom" placeholder="Nom" required>
+              </div>
+              <div class="col">
+                <label for="prenom" class="form-label">Prénom</label>
+                <input type="text" class="form-control" id="prenom" placeholder="Prénom" required>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col">
+                <label for="email" class="form-label">Adresse mail</label>
+                <input type="email" class="form-control" id="email" placeholder="Adresse mail" required>
+              </div>
+              <div class="col">
+                <label for="telephone" class="form-label">Numéro de téléphone</label>
+                <input type="text" class="form-control" id="telephone" placeholder="Numéro de téléphone" required>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col">
+                <label for="adresse" class="form-label">Adresse</label>
+                <input type="text" class="form-control" id="adresse" placeholder="Adresse">
+              </div>
+              <div class="col">
+                <label for="dateNaissance" class="form-label">Date de naissance</label>
+                <input type="date" class="form-control" id="dateNaissance">
+              </div>
+              <div class="col">
+                <label for="genre" class="form-label">Genre</label>
+                <select id="genre" class="form-select">
+                  <option value="None">None</option>
+                  <option value="Masculin">Masculin</option>
+                  <option value="Féminin">Féminin</option>
+                </select>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Enregistrer</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <!-- Formulaire Étudiant -->
+    <section id="add-student" class="add-student-section mt-5">
+      <h2 class="text-center">Ajouter un Étudiant</h2>
+      <div class="content-section">
+        <form action="#" method="POST" class="form-student">
+          <div class="form-group row">
+            <label for="student-id" class="col-sm-3 col-form-label">ID Étudiant :</label>
+            <div class="col-sm-9">
+              <input type="text" id="student-id" name="student-id" class="form-control" placeholder="ID Étudiant">
+            </div>
           </div>
-        </header>
-
-       <main>
-         <!-- Contenu du document à modifier -->
-
-
-
-
-         <!-- Fin du contenu -->
-       </main>
+          <div class="form-group row">
+            <label for="first-name" class="col-sm-3 col-form-label">Prénom :</label>
+            <div class="col-sm-9">
+              <input type="text" id="first-name" name="first-name" class="form-control" placeholder="Prénom">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="last-name" class="col-sm-3 col-form-label">Nom :</label>
+            <div class="col-sm-9">
+              <input type="text" id="last-name" name="last-name" class="form-control" placeholder="Nom">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="email" class="col-sm-3 col-form-label">Email :</label>
+            <div class="col-sm-9">
+              <input type="email" id="email" name="email" class="form-control" placeholder="Email">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="country" class="col-sm-3 col-form-label">Pays d'origine :</label>
+            <div class="col-sm-9">
+              <input type="text" id="country" name="country" class="form-control" placeholder="Pays d'origine">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="phone" class="col-sm-3 col-form-label">N° de Téléphone :</label>
+            <div class="col-sm-9">
+              <input type="tel" id="phone" name="phone" class="form-control" placeholder="N° de Téléphone">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="student-photo" class="col-sm-3 col-form-label">Photo d'identité :</label>
+            <div class="col-sm-9">
+              <input type="file" id="student-photo" name="student-photo" class="form-control-file" accept="image/*">
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-sm-9 offset-sm-3">
+              <button type="submit" class="btn btn-primary btn-block">Ajouter l'Étudiant</button>
+            </div>
+          </div>
+        </form>
+      </div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
+
+    <script src="../base/js/scripts.js"></script>
+
+
+
+    <h2>Gestion des Étudiants</h2>
+    <div class="content-section">
+      <p>Gérez les informations des étudiants : création, modification, Archivage, suppression et suivi.</p>
+      <!-- <a href="#" class="cta-button">Ajouter un étudiant</a> -->
+      <a href="#add-student" class="cta-button">Ajouter un étudiant</a>
+
+      <!-- legende de la table -->
+      <Caption></Caption>
+      <!-- notion de table avec html -->
+      <table border="1" width="50%" class="table">
+        <!-- tableau head -->
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Email</th>
+            <th>Pays d'origine</th>
+            <th>N° de Telephone</th>
+            <th>image par default</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <!-- tableau body -->
+        <tbody>
+          <tr>
+            <td>001</td>
+            <td>Dupont</td>
+            <td>Jean</td>
+            <td>jean.dupont@example.com</td>
+            <td>USA</td>
+            <td>+123456789</td>
+            <td>
+              <a href="./image/img19.jpeg">
+                <img src="./image/img19.jpeg" alt="Photo d'identité"
+                  style="width: 2cm; height: 2cm; object-fit: cover;" />
+              </a>
+            </td>
+            <td><a href="#">Modifier</a> | <a href="#">Archiver</a> | <a href="#">Supprimer</a></td>
+          </tr>
+          <tr>
+            <td>002</td>
+            <td>Nzogang Nzomo </td>
+            <td>Rodrigue </td>
+            <td>nzomo.rodrigue@tmrcomputing.com</td>
+            <td>CAMEROUN</td>
+            <td>+242 06 521 8412</td>
+            <td>
+              <a href="./image/img19.jpeg">
+                <img src="./image/img19.jpeg" alt="Photo d'identité"
+                  style="width: 2cm; height: 2cm; object-fit: cover;" />
+              </a>
+            </td>
+            <td><a href="#">Modifier</a> | <a href="#">Archiver</a> | <a href="#">Supprimer</a></td>
+          </tr>
+
+          <tr>
+            <td>001</td>
+            <td>BEMALERA</td>
+            <td>Toussaint</td>
+            <td>kouratoussaint@ymail.com</td>
+            <td>BURKINA FASO</td>
+            <td>+226 75 49 35 18</td>
+            <td>
+              <a href="./image/img19.jpeg">
+                <img src="./image/img19.jpeg" alt="Photo d'identité"
+                  style="width: 2cm; height: 2cm; object-fit: cover;" />
+              </a>
+            </td>
+            <td><a href="#">Modifier</a> | <a href="#">Archiver</a> | <a href="#">Supprimer</a></td>
+          </tr>
+          <tr>
+            <td>002</td>
+            <td>NGOUNOU TCHUINTEU</td>
+            <td>Patricia Ornella</td>
+            <td>patriciatchuinteu@gmail.com</td>
+            <td>CAMEROUN</td>
+            <td>+237 65 62 36 045</td>
+            <td>
+              <a href="./image/img19.jpeg">
+                <img src="./image/img19.jpeg" alt="Photo d'identité"
+                  style="width: 2cm; height: 2cm; object-fit: cover;" />
+              </a>
+            </td>
+            <td><a href="#">Modifier</a> | <a href="#">Archiver</a> | <a href="#">Supprimer</a></td>
+          </tr>
+          <tr>
+            <td>003</td>
+            <td></td>
+            <td>Aboubakar</td>
+            <td>aboubakardiama@gmail.com</td>
+            <td>CAMEROUN</td>
+            <td>+237 69 75 42 122</td>
+            <td>
+              <a href="./image/img19.jpeg">
+                <img src="./image/img19.jpeg" alt="Photo d'identité"
+                  style="width: 2cm; height: 2cm; object-fit: cover;" />
+              </a>
+            </td>
+            <td><a href="#">Modifier</a> | <a href="#">Archiver</a> | <a href="#">Supprimer</a></td>
+          </tr>
+          <tr>
+            <td>004</td>
+            <td>Abdoul</td>
+            <td>Binguitcha</td>
+            <td>lemailbinguoshadownet@gmail.com</td>
+            <td>TOGO</td>
+            <td>+228 92 10 34 71</td>
+            <td>
+              <a href="./image/img19.jpeg">
+                <img src="./image/img19.jpeg" alt="Photo d'identité"
+                  style="width: 2cm; height: 2cm; object-fit: cover;" />
+              </a>
+            </td>
+            <td><a href="#">Modifier</a> | <a href="#">Archiver</a> | <a href="#">Supprimer</a></td>
+          </tr>
+          <tr>
+            <td>005</td>
+            <td>NANKAM SEUTCHE</td>
+            <td>Fabrice</td>
+            <td>fanas009@yahoo.fr</td>
+            <td>CAMEROUN</td>
+            <td>+237 69 47 06 013</td>
+            <td>
+              <a href="./image/img19.jpeg">
+                <img src="./image/img19.jpeg" alt="Photo d'identité"
+                  style="width: 2cm; height: 2cm; object-fit: cover;" />
+              </a>
+            </td>
+            <td><a href="#">Modifier</a> | <a href="#">Archiver</a> | <a href="#">Supprimer</a></td>
+          </tr>
+          <tr>
+            <td>006</td>
+            <td>ALOUI</td>
+            <td>Sabiha</td>
+            <td>sabiha.aloui123@gmail.com</td>
+            <td>TUNISIE</td>
+            <td>+216 21 36 39 72</td>
+            <td>
+              <a href="./image/img19.jpeg">
+                <img src="./image/img19.jpeg" alt="Photo d'identité"
+                  style="width: 2cm; height: 2cm; object-fit: cover;" />
+              </a>
+            </td>
+            <td><a href="#">Modifier</a> | <a href="#">Archiver</a> | <a href="#">Supprimer</a></td>
+          </tr>
+          <tr>
+            <td>007</td>
+            <td>AMOUSSOUGBO</td>
+            <td>Serge Anani</td>
+            <td>amoussougboserge@gmail.com</td>
+            <td>BENIN</td>
+            <td>+229 40 44 03 89</td>
+            <td>
+              <a href="./image/img19.jpeg">
+                <img src="./image/img19.jpeg" alt="Photo d'identité"
+                  style="width: 2cm; height: 2cm; object-fit: cover;" />
+              </a>
+            </td>
+            <td><a href="#">Modifier</a> | <a href="#">Archiver</a> | <a href="#">Supprimer</a></td>
+          </tr>
+          <tr>
+            <td>008</td>
+            <td>DIALLO</td>
+            <td>Fatoumata Oury</td>
+            <td>tymatafa@gmail.com</td>
+            <td>SENEGAL</td>
+            <td>+221 77 87 17 321</td>
+            <td>
+              <a href="./image/img19.jpeg">
+                <img src="./image/img19.jpeg" alt="Photo d'identité"
+                  style="width: 2cm; height: 2cm; object-fit: cover;" />
+              </a>
+            </td>
+            <td><a href="#">Modifier</a> | <a href="#">Archiver</a> | <a href="#">Supprimer</a></td>
+          </tr>
+          <tr>
+            <td>009</td>
+            <td>MENSAH</td>
+            <td>Yvon</td>
+            <td>yvonmensah22@gmail.com</td>
+            <td>BENIN</td>
+            <td>+229 90 01 09 16</td>
+            <td>
+              <a href="./image/img19.jpeg">
+                <img src="./image/img19.jpeg" alt="Photo d'identité"
+                  style="width: 2cm; height: 2cm; object-fit: cover;" />
+              </a>
+            </td>
+            <td><a href="#">Modifier</a> | <a href="#">Archiver</a> | <a href="#">Supprimer</a></td>
+          </tr>
+          <tr>
+            <td>010</td>
+            <td>DJUISSI FOHOUO</td>
+            <td>Sidonie</td>
+            <td>sifohouo@gmail.com</td>
+            <td>CAMEROUN</td>
+            <td>+237 69 60 02 377</td>
+            <td>
+              <a href="./image/img19.jpeg">
+                <img src="./image/img19.jpeg" alt="Photo d'identité"
+                  style="width: 2cm; height: 2cm; object-fit: cover;" />
+              </a>
+            </td>
+            <td><a href="#">Modifier</a> | <a href="#">Archiver</a> | <a href="#">Supprimer</a></td>
+          </tr>
+          <tr>
+            <td>011</td>
+            <td>HOUANSOU</td>
+            <td>Michel</td>
+            <td>michelhouansou1998@gmail.com</td>
+            <td>BENIN</td>
+            <td>+229 96 35 41 09</td>
+            <td>
+              <a href="./image/img19.jpeg">
+                <img src="./image/img19.jpeg" alt="Photo d'identité"
+                  style="width: 2cm; height: 2cm; object-fit: cover;" />
+              </a>
+            </td>
+            <td><a href="#">Modifier</a> | <a href="#">Archiver</a> | <a href="#">Supprimer</a></td>
+          </tr>
+          <tr>
+            <td>012</td>
+            <td>MENSAH</td>
+            <td>Kokou Mawuna</td>
+            <td>meskojohn@gmail.com</td>
+            <td>TOGO</td>
+            <td>+228 91 98 33 77</td>
+            <td>
+              <a href="./image/img19.jpeg">
+                <img src="./image/img19.jpeg" alt="Photo d'identité"
+                  style="width: 2cm; height: 2cm; object-fit: cover;" />
+              </a>
+            </td>
+            <td><a href="#">Modifier</a> | <a href="#">Archiver</a> | <a href="#">Supprimer</a></td>
+          </tr>
+
+          <tr>
+            <td>013</td>
+            <td>SISSOKHO</td>
+            <td>El Hadji Samba</td>
+            <td>elhadjisamba.sissokho@gmail.com</td>
+            <td>SENEGAL</td>
+            <td>+221 77 26 72 143</td>
+            <td>
+              <a href="./image/img19.jpeg">
+                <img src="./image/img19.jpeg" alt="Photo d'identité"
+                  style="width: 2cm; height: 2cm; object-fit: cover;" />
+              </a>
+            </td>
+            <td><a href="#">Modifier</a> | <a href="#">Archiver</a> | <a href="#">Supprimer</a></td>
+          </tr>
+          <tr>
+            <td>014</td>
+            <td>MOUKOKO</td>
+            <td>Giovanni</td>
+            <td>giovanimoukoko@gmail.com</td>
+            <td>CONGO BRAZZAVILLE</td>
+            <td>+242 68 99 61 06</td>
+            <td>
+              <a href="./image/img19.jpeg">
+                <img src="./image/img19.jpeg" alt="Photo d'identité"
+                  style="width: 2cm; height: 2cm; object-fit: cover;" />
+              </a>
+            </td>
+            <td><a href="#">Modifier</a> | <a href="#">Archiver</a> | <a href="#">Supprimer</a></td>
+          </tr>
+          <tr>
+            <td>015</td>
+            <td>De SOUZA</td>
+            <td>Carles</td>
+            <td>carlesdesouza4@gmail.com</td>
+            <td>RDC</td>
+            <td>+243 82 05 15 953</td>
+            <td>
+              <a href="./image/img19.jpeg">
+                <img src="./image/img19.jpeg" alt="Photo d'identité"
+                  style="width: 2cm; height: 2cm; object-fit: cover;" />
+              </a>
+            </td>
+            <td><a href="#">Modifier</a> | <a href="#">Archiver</a> | <a href="#">Supprimer</a></td>
+          </tr>
+          <tr>
+            <td>016</td>
+            <td>GOUMOU</td>
+            <td>Jean-Baptiste</td>
+            <td>jeanbaptistegou@gmail.com</td>
+            <td>GUINEE CONAKRY</td>
+            <td>+224 62 93 00 229</td>
+            <td>
+              <a href="./image/img19.jpeg">
+                <img src="./image/img19.jpeg" alt="Photo d'identité"
+                  style="width: 2cm; height: 2cm; object-fit: cover;" />
+              </a>
+            </td>
+            <td><a href="#">Modifier</a> | <a href="#">Archiver</a> | <a href="#">Supprimer</a></td>
+          </tr>
+          <tr>
+            <td>017</td>
+            <td>KOUNTON</td>
+            <td>Angelo</td>
+            <td>sonagnonange@gmail.com</td>
+            <td>BENIN</td>
+            <td>+229 94 06 29 46</td>
+            <td>
+              <a href="./image/img19.jpeg">
+                <img src="./image/img19.jpeg" alt="Photo d'identité"
+                  style="width: 2cm; height: 2cm; object-fit: cover;" />
+              </a>
+            </td>
+            <td><a href="#">Modifier</a> | <a href="#">Archiver</a> | <a href="#">Supprimer</a></td>
+          </tr>
+          <tr>
+            <td>018</td>
+            <td>KAFFO</td>
+            <td>Ramiro</td>
+            <td>sonnyrakaffo@gmail.com</td>
+            <td>CAMEROUN</td>
+            <td>+237 67 22 79 946</td>
+            <td>
+              <a href="./image/img19.jpeg">
+                <img src="./image/img19.jpeg" alt="Photo d'identité"
+                  style="width: 2cm; height: 2cm; object-fit: cover;" />
+              </a>
+            </td>
+            <td><a href="#">Modifier</a> | <a href="#">Archiver</a> | <a href="#">Supprimer</a></td>
+          </tr>
+          <tr>
+            <td>019</td>
+            <td>DIAO</td>
+            <td>Hothia</td>
+            <td>hothiadiao@gmail.com</td>
+            <td>SENEGAL</td>
+            <td>+221 77 61 99 972</td>
+            <td>
+              <a href="./image/img19.jpeg">
+                <img src="./image/img19.jpeg" alt="Photo d'identité"
+                  style="width: 2cm; height: 2cm; object-fit: cover;" />
+              </a>
+            </td>
+            <td><a href="#">Modifier</a> | <a href="#">Archiver</a> | <a href="#">Supprimer</a></td>
+          </tr>
+          <tr>
+            <td>020</td>
+            <td>JOVY NEDVED</td>
+            <td>Monka-Kanda</td>
+            <td>jovymonka7@gmail.com</td>
+            <td>CONGO BRAZZAVILLE</td>
+            <td>+242 06 83 77 985</td>
+            <td>
+              <a href="./image/img19.jpeg">
+                <img src="./image/img19.jpeg" alt="Photo d'identité"
+                  style="width: 2cm; height: 2cm; object-fit: cover;" />
+              </a>
+            </td>
+            <td><a href="#">Modifier</a> | <a href="#">Archiver</a> | <a href="#">Supprimer</a></td>
+          </tr>
+          <tr>
+            <td>021</td>
+            <td>DIAKITE</td>
+            <td>Cheick Oumar</td>
+            <td>oumar654504@gmail.com</td>
+            <td>MALI</td>
+            <td>+223 73 72 5777</td>
+            <td>
+              <a href="./image/img19.jpeg">
+                <img src="./image/img19.jpeg" alt="Photo d'identité"
+                  style="width: 2cm; height: 2cm; object-fit: cover;" />
+              </a>
+            </td>
+            <td><a href="#">Modifier</a> | <a href="#">Archiver</a> | <a href="#">Supprimer</a></td>
+          </tr>
+          <tr>
+            <td>022</td>
+            <td>MAKO</td>
+            <td>Samuel</td>
+            <td>bwsamuel6@gmail.com</td>
+            <td>RDC</td>
+            <td>+243 97 95 34 252</td>
+            <td>
+              <a href="./image/img19.jpeg">
+                <img src="./image/img19.jpeg" alt="Photo d'identité"
+                  style="width: 2cm; height: 2cm; object-fit: cover;" />
+              </a>
+            </td>
+            <td><a href="#">Modifier</a> | <a href="#">Archiver</a> | <a href="#">Supprimer</a></td>
+          </tr>
+          <tr>
+            <td>023</td>
+            <td>NZOGANG NZOMO</td>
+            <td>Rodrigue</td>
+            <td>r.nzomo.ngzconsulting@gmail.com</td>
+            <td>CAMEROUN (vit au CONGO)</td>
+            <td>+242 06 52 18 412</td>
+            <td>
+              <a href="./image/img19.jpeg">
+                <img src="./image/img19.jpeg" alt="Photo d'identité"
+                  style="width: 2cm; height: 2cm; object-fit: cover;" />
+              </a>
+            </td>
+            <td><a href="#">Modifier</a> | <a href="#">Archiver</a> | <a href="#">Supprimer</a></td>
+          </tr>
+          <tr>
+            <td>024</td>
+            <td>TAMBA</td>
+            <td>Moussa</td>
+            <td>tambamoussa@gmail.com</td>
+            <td>SENEGAL</td>
+            <td>+221 77 55 03 716</td>
+            <td>
+              <a href="./image/img19.jpeg">
+                <img src="./image/img19.jpeg" alt="Photo d'identité"
+                  style="width: 2cm; height: 2cm; object-fit: cover;" />
+              </a>
+            </td>
+            <td><a href="#">Modifier</a> | <a href="#">Archiver</a> | <a href="#">Supprimer</a></td>
+          </tr>
+          <td>025</td>
+          <td>VODOUNNOU</td>
+          <td>Nicodème Selomin</td>
+          <td>nicodemevodounnou90@gmail.com</td>
+          <td>BENIN</td>
+          <td>+229 61 59 24 04</td>
+          <td>
+            <a href="./image/img19.jpeg">
+              <img src="./image/img19.jpeg" alt="Photo d'identité"
+                style="width: 2cm; height: 2cm; object-fit: cover;" />
+            </a>
+          </td>
+          <td><a href="#">Modifier</a> | <a href="#">Archiver</a> | <a href="#">Supprimer</a></td>
+          </tr>
+          <tr>
+            <td>026</td>
+            <td>BEKAYE</td>
+            <td>Joël Fred</td>
+            <td>joelbekaye@gmail.com</td>
+            <td>CAMEROUN</td>
+            <td>+237 69 58 43 575</td>
+            <td>
+              <a href="./image/img19.jpeg">
+                <img src="./image/img19.jpeg" alt="Photo d'identité"
+                  style="width: 2cm; height: 2cm; object-fit: cover;" />
+              </a>
+            </td>
+            <td><a href="#">Modifier</a> | <a href="#">Archiver</a> | <a href="#">Supprimer</a></td>
+          </tr>
+          <tr>
+            <td>027</td>
+            <td>AHOSSINOU</td>
+            <td>Saturnin</td>
+            <td>saturninahossinou6@gmail.com</td>
+            <td>BENIN</td>
+            <td>+229 96 84 97 33</td>
+            <td>
+              <a href="./image/img19.jpeg">
+                <img src="./image/img19.jpeg" alt="Photo d'identité"
+                  style="width: 2cm; height: 2cm; object-fit: cover;" />
+              </a>
+            </td>
+            <td><a href="#">Modifier</a> | <a href="#">Archiver</a> | <a href="#">Supprimer</a></td>
+          </tr>
+          <tr>
+            <td>028</td>
+            <td>EDJAGO</td>
+            <td>Ulrich</td>
+            <td>ulrichedjago@gmail.com</td>
+            <td>BENIN</td>
+            <td>+229 98 99 31 70</td>
+            <td>
+              <a href="./image/img19.jpeg">
+                <img src="./image/img19.jpeg" alt="Photo d'identité"
+                  style="width: 2cm; height: 2cm; object-fit: cover;" />
+              </a>
+            </td>
+            <td><a href="#">Modifier</a> | <a href="#">Archiver</a> | <a href="#">Supprimer</a></td>
+          </tr>
+          <tr>
+            <td>029</td>
+            <td>TCHAMBOU KOUAMEGNI</td>
+            <td>Urelle Ferreol</td>
+            <td>ferreoltchambouu@gmail.com</td>
+            <td>CAMEROUN</td>
+            <td>+237 69 55 92 835</td>
+            <td>
+              <a href="./image/img19.jpeg">
+                <img src="./image/img19.jpeg" alt="Photo d'identité"
+                  style="width: 2cm; height: 2cm; object-fit: cover;" />
+              </a>
+            </td>
+            <td><a href="#">Modifier</a> | <a href="#">Archiver</a> | <a href="#">Supprimer</a></td>
+          </tr>
+          <tr>
+            <td>030</td>
+            <td>GASSAMA</td>
+            <td>Djimo</td>
+            <td>diabygassamad16@gmail.com</td>
+            <td>SENEGAL</td>
+            <td>+221 77 98 18 854</td>
+            <td>
+              <a href="./image/img19.jpeg">
+                <img src="./image/img19.jpeg" alt="Photo d'identité"
+                  style="width: 2cm; height: 2cm; object-fit: cover;" />
+              </a>
+            </td>
+            <td><a href="#">Modifier</a> | <a href="#">Archiver</a> | <a href="#">Supprimer</a></td>
+          </tr>
+          <tr>
+            <td>031</td>
+            <td>YOVO</td>
+            <td>Koffi Vianney</td>
+            <td>vianneyyovo@gmail.com</td>
+            <td>TOGO</td>
+            <td>+228 91 69 47 91</td>
+            <td>
+              <a href="./image/img19.jpeg">
+                <img src="./image/img19.jpeg" alt="Photo d'identité"
+                  style="width: 2cm; height: 2cm; object-fit: cover;" />
+              </a>
+            </td>
+            <td><a href="#">Modifier</a> | <a href="#">Archiver</a> | <a href="#">Supprimer</a></td>
+          </tr>
+          <tr>
+            <td>032</td>
+            <td>DOSSI</td>
+            <td>Akotomey Gracias</td>
+            <td>emmaakotomey@gmail.com</td>
+            <td>BENIN</td>
+            <td>+229 51 45 36 13</td>
+            <td>
+              <a href="./image/img19.jpeg">
+                <img src="./image/img19.jpeg" alt="Photo d'identité"
+                  style="width: 2cm; height: 2cm; object-fit: cover;" />
+              </a>
+            </td>
+            <td><a href="#">Modifier</a> | <a href="#">Archiver</a> | <a href="#">Supprimer</a></td>
+          </tr>
+          <tr>
+            <td>033</td>
+            <td>KADIRI</td>
+            <td>Oumogou Naffiou</td>
+            <td>knaffiou96@gmail.com</td>
+            <td>TOGO</td>
+            <td>+221 77 53 86 826</td>
+            <td>
+              <a href="./image/img19.jpeg">
+                <img src="./image/img19.jpeg" alt="Photo d'identité"
+                  style="width: 2cm; height: 2cm; object-fit: cover;" />
+              </a>
+            </td>
+            <td><a href="#">Modifier</a> | <a href="#">Archiver</a> | <a href="#">Supprimer</a></td>
+          </tr>
+          <tr>
+            <td>034</td>
+            <td>SOW</td>
+            <td>Oumou</td>
+            <td>oumou.vero.sow@gmail.com</td>
+            <td>MAURITANIE</td>
+            <td>+222 49 43 49 62</td>
+            <td>
+              <a href="./image/img19.jpeg">
+                <img src="./image/img19.jpeg" alt="Photo d'identité"
+                  style="width: 2cm; height: 2cm; object-fit: cover;" />
+              </a>
+            </td>
+            <td><a href="#">Modifier</a> | <a href="#">Archiver</a> | <a href="#">Supprimer</a></td>
+          </tr>
+          <tr>
+            <td>035</td>
+            <td>GODE</td>
+            <td>Justin</td>
+            <td>jgode.stat@gmail.com</td>
+            <td>BENIN</td>
+            <td>+229 61 82 06 46</td>
+            <td>
+              <a href="./image/img19.jpeg">
+                <img src="./image/img19.jpeg" alt="Photo d'identité"
+                  style="width: 2cm; height: 2cm; object-fit: cover;" />
+              </a>
+            </td>
+            <td><a href="#">Modifier</a> | <a href="#">Archiver</a> | <a href="#">Supprimer</a></td>
+          </tr>
+          <tr>
+            <td>036</td>
+            <td>SODOKIN</td>
+            <td>Isabelle</td>
+            <td>isabellesodokin0@gmail.com</td>
+            <td>TOGO</td>
+            <td>+228 92 16 12 90</td>
+            <td>
+              <a href="./image/img19.jpeg">
+                <img src="./image/img19.jpeg" alt="Photo d'identité"
+                  style="width: 2cm; height: 2cm; object-fit: cover;" />
+              </a>
+            </td>
+            <td><a href="#">Modifier</a> | <a href="#">Archiver</a> | <a href="#">Supprimer</a></td>
+          </tr>
+
+          <tr>
+            <td>037</td>
+            <td>FALL</td>
+            <td>Omar</td>
+            <td>fallomar0123@gmail.com</td>
+            <td>COTE D'IVOIRE</td>
+            <td>+225 74 76 43 420</td>
+            <td>
+              <a href="./image/img19.jpeg">
+                <img src="./image/img19.jpeg" alt="Photo d'identité"
+                  style="width: 2cm; height: 2cm; object-fit: cover;" />
+              </a>
+            </td>
+            <td><a href="#">Modifier</a> | <a href="#">Archiver</a> | <a href="#">Supprimer</a></td>
+          </tr>
+          <tr>
+            <td>038</td>
+            <td>KOUMBA</td>
+            <td>Inefable</td>
+            <td>inefable.koumba.ik@gmail.com</td>
+            <td>CONGO BRAZZAVILLE</td>
+            <td>+242 06 88 01 986</td>
+            <td>
+              <a href="./image/img19.jpeg">
+                <img src="./image/img19.jpeg" alt="Photo d'identité"
+                  style="width: 2cm; height: 2cm; object-fit: cover;" />
+              </a>
+            </td>
+            <td><a href="#">Modifier</a> | <a href="#">Archiver</a> | <a href="#">Supprimer</a></td>
+          </tr>
+          <tr>
+            <td>039</td>
+            <td>NJIEMESSA</td>
+            <td>Jalil Gafar Fonda</td>
+            <td>fondajalil@gmail.com</td>
+            <td>CAMEROUN</td>
+            <td>+237 69 81 83 297</td>
+            <td>
+              <a href="./image/img19.jpeg">
+                <img src="./image/img19.jpeg" alt="Photo d'identité"
+                  style="width: 2cm; height: 2cm; object-fit: cover;" />
+              </a>
+            </td>
+            <td><a href="#">Modifier</a> | <a href="#">Archiver</a> | <a href="#">Supprimer</a></td>
+          </tr>
+          <tr>
+            <td>040</td>
+            <td>MATHO</td>
+            <td>Adeline</td>
+            <td>adelinematho0@gmail.com</td>
+            <td>CAMEROUN</td>
+            <td>+237 69 43 36 939</td>
+            <td>
+              <a href="./image/img19.jpeg">
+                <img src="./image/img19.jpeg" alt="Photo d'identité"
+                  style="width: 2cm; height: 2cm; object-fit: cover;" />
+              </a>
+            </td>
+            <td><a href="#">Modifier</a> | <a href="#">Archiver</a> | <a href="#">Supprimer</a></td>
+          </tr>
+          <tr>
+            <td>041</td>
+            <td>ZEZE</td>
+            <td>Sandra</td>
+            <td>melbazeze@gmail.com</td>
+            <td>COTE D'IVOIRE</td>
+            <td>+225 07 57 68 1485</td>
+            <td>
+              <a href="./image/img19.jpeg">
+                <img src="./image/img19.jpeg" alt="Photo d'identité"
+                  style="width: 2cm; height: 2cm; object-fit: cover;" />
+              </a>
+            </td>
+            <td><a href="#">Modifier</a> | <a href="#">Archiver</a> | <a href="#">Supprimer</a></td>
+          </tr>
+          <tr>
+            <td>042</td>
+            <td>NIKIEMA</td>
+            <td>Laurent</td>
+            <td>lnikiema9@gmail.com</td>
+            <td>BURKINA FASO</td>
+            <td>+226 77 50 58 73</td>
+            <td>
+              <a href="./image/img19.jpeg">
+                <img src="./image/img19.jpeg" alt="Photo d'identité"
+                  style="width: 2cm; height: 2cm; object-fit: cover;" />
+              </a>
+            </td>
+            <td><a href="#">Modifier</a> | <a href="#">Archiver</a> | <a href="#">Supprimer</a></td>
+          </tr>
+          <tr>
+            <td>043</td>
+            <td>DOSSOU</td>
+            <td>Quirin</td>
+            <td>djhintodossou@gmail.com</td>
+            <td>BENIN</td>
+            <td>+229 51 54 95 97</td>
+            <td>
+              <a href="./image/img19.jpeg">
+                <img src="./image/img19.jpeg" alt="Photo d'identité"
+                  style="width: 2cm; height: 2cm; object-fit: cover;" />
+              </a>
+            </td>
+            <td><a href="#">Modifier</a> | <a href="#">Archiver</a> | <a href="#">Supprimer</a></td>
+          </tr>
+          <tr>
+            <td>044</td>
+            <td>BENJDIR</td>
+            <td>Aïcha</td>
+            <td>aicha.benjdir@isimg.tn</td>
+            <td>TUNISIE</td>
+            <td>+216 99 13 76 41</td>
+            <td>
+              <a href="./image/img19.jpeg">
+                <img src="./image/img19.jpeg" alt="Photo d'identité"
+                  style="width: 2cm; height: 2cm; object-fit: cover;" />
+              </a>
+            </td>
+            <td><a href="#">Modifier</a> | <a href="#">Archiver</a> | <a href="#">Supprimer</a></td>
+          </tr>
+          <tr>
+            <td>045</td>
+            <td>BANNAME</td>
+            <td>Lenne</td>
+            <td>bannamevictor@gmail.com</td>
+            <td>TOGO</td>
+            <td>+228 90 53 56 29</td>
+            <td>
+              <a href="./image/img19.jpeg">
+                <img src="./image/img19.jpeg" alt="Photo d'identité"
+                  style="width: 2cm; height: 2cm; object-fit: cover;" />
+              </a>
+            </td>
+            <td><a href="#">Modifier</a> | <a href="#">Archiver</a> | <a href="#">Supprimer</a></td>
+          </tr>
+          <!-- Autres lignes  à completer pour d'autres etudiants-->
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+
+  <!-- Fin du contenu -->
+  </main>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+
+  <!-- Footer Block -->
+  <footer class="footer">
+    <p>&copy; 2024 Groupe 1. Tous droits réservés.</p>
+  </footer>
 </body>
+
 </html>
