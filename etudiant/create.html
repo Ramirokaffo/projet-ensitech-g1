@@ -42,14 +42,47 @@
           </div>
         </header>
 
-       <main>
          <!-- Contenu du document à modifier -->
-
-
-
-
+         <main class="container py-4">
+            <h2>Création d'un étudiant</h2>
+            <div class="border rounded p-4 bg-light">
+                <form action="#" method="POST" class="row g-3">
+                    <div class="col-md-6">
+                        <label for="studentId" class="form-label">ID Étudiant</label>
+                        <input type="text" class="form-control" id="studentId" name="studentId" placeholder="Entrez l'ID de l'étudiant" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="firstName" class="form-label">Prénom</label>
+                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Entrez le prénom" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="lastName" class="form-label">Nom</label>
+                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Entrez le nom" required>
+                    </div>
+                    <div class="col-12">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Entrez l'adresse email" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="birthDate" class="form-label">Date de naissance</label>
+                        <input type="date" class="form-control" id="birthDate" name="birthDate" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="phone" class="form-label">Téléphone</label>
+                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Entrez le numéro de téléphone" required>
+                    </div>
+                    <div class="col-12">
+                        <label for="address" class="form-label">Adresse</label>
+                        <input type="text" class="form-control" id="address" name="address" placeholder="Entrez l'adresse" required>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Créer l'étudiant</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+      
          <!-- Fin du contenu -->
-       </main>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 

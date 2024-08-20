@@ -44,7 +44,65 @@
 
        <main>
          <!-- Contenu du document à modifier -->
-
+         <main class="container py-4">
+          <div class="border rounded p-4 bg-light">
+              <form action="#" method="POST" class="row g-3">
+                <h2>Modification d'un étudiant</h2>
+                  <!-- Champ ID Étudiant (Lecture seule pour éviter les modifications) -->
+                  <div class="col-md-6">
+                      <label for="studentId" class="form-label">ID Étudiant</label>
+                      <input type="text" class="form-control" id="studentId" name="studentId" placeholder="ID de l'étudiant" value="12345" readonly>
+                  </div>
+                  
+                  <!-- Champ Prénom -->
+                  <div class="col-md-6">
+                      <label for="firstName" class="form-label">Prénom</label>
+                      <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Modifiez le prénom" value="Jean">
+                  </div>
+                  
+                  <!-- Champ Nom et Email sur la même ligne -->
+                  <div class="col-md-6">
+                      <label for="lastName" class="form-label">Nom</label>
+                      <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Modifiez le nom" value="Tchinda">
+                  </div>
+                  <div class="col-md-6">
+                      <label for="email" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="email" name="email" placeholder="Modifiez l'adresse email" value="jean.tchinda@example.com">
+                  </div>
+                  
+                  <!-- Champ Genre -->
+                  <div class="col-md-6">
+                      <label for="gender" class="form-label">Genre</label>
+                      <select class="form-select" id="gender" name="gender">
+                          <option value="male" selected>Masculin</option>
+                          <option value="female">Féminin</option>
+                          <option value="other">Autre</option>
+                      </select>
+                  </div>
+                  
+                  <!-- Champ Date de naissance -->
+                  <div class="col-md-6">
+                      <label for="birthDate" class="form-label">Date de naissance</label>
+                      <input type="date" class="form-control" id="birthDate" name="birthDate" value="2000-01-01">
+                  </div>
+      
+                  <!-- Champ Téléphone et Adresse sur la même ligne -->
+                  <div class="col-md-6">
+                      <label for="phone" class="form-label">Téléphone</label>
+                      <input type="tel" class="form-control" id="phone" name="phone" placeholder="Modifiez le numéro de téléphone" value="0123456789">
+                  </div>
+                  <div class="col-md-6">
+                      <label for="address" class="form-label">Adresse</label>
+                      <input type="text" class="form-control" id="address" name="address" placeholder="Modifiez l'adresse" value="123 Rue Exemple">
+                  </div>
+                  
+                  <!-- Bouton de soumission -->
+                  <div class="col-12">
+                      <button type="submit" class="btn btn-primary">Modifier l'étudiant</button>
+                  </div>
+              </form>
+          </div>
+      </main>
 
 
 

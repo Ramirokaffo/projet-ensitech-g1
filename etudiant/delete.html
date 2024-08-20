@@ -44,7 +44,31 @@
 
        <main>
          <!-- Contenu du document à modifier -->
-
+         <main class="container py-4">
+          <div class="border rounded p-4 bg-light">
+              <form action="#" method="POST" class="row g-3">
+                  <h2>Suppression d'un étudiant</h2>
+                  <!-- Champ ID Étudiant -->
+                  <div class="col-md-6">
+                      <label for="studentId" class="form-label">ID Étudiant</label>
+                      <input type="text" class="form-control" id="studentId" name="studentId" placeholder="Entrez l'ID de l'étudiant à supprimer" required>
+                  </div>
+                  
+                  <!-- Confirmation de suppression -->
+                  <div class="col-12">
+                      <p class="text-danger">Cette action est irréversible. Assurez-vous que vous souhaitez vraiment supprimer cet étudiant.</p>
+                  </div>
+                  
+                  <!-- Bouton de soumission -->
+                  <div class="col-12">
+                      <button type="submit" class="btn btn-danger">Supprimer l'étudiant</button>
+                  </div>
+              </form>
+          </div>
+      </main>
+      
+       <!-- Fin du contenu -->
+     </main>
 
 
 
