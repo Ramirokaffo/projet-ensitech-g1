@@ -1,0 +1,20 @@
+<style>
+        .login-form-container {
+            display: none; /* Caché par défaut */
+            position: absolute;
+            top: 60px;
+            right: 10px;
+            width: 300px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background-color: #fff;
+            z-index: 1000; /* Assure que le formulaire apparaît au-dessus des autres éléments */
+        }
+        .show-login-form {
+            display: block; /* Affiche le formulaire lors du clic sur le bouton Login */
+        }
+        .login-form-container h4 {
+            margin-bottom: 20px;
+        }
+    </style>
