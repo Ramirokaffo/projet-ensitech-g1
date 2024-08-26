@@ -1,0 +1,80 @@
+body{
+    background-image: url(../img/Visuel-campus-SQY-030423-768x512-1.png);
+    background-attachment: fixed;
+}
+h1{
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    margin-top: 80px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.main{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    height: 400px;
+    width: 370px;
+    box-shadow: -1px 1px 3px grey,
+                 1px -1px 3px white;
+    border-radius: 5px;   
+    font-family: Arial, Helvetica, sans-serif;          
+}
+.box{
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin: 15px;
+    box-shadow: inset -1px 1px 3px grey,
+                 inset 1px -1px 3px white;
+    border-radius: 5px;  
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px solid #509CDB;
+    transition: .3s ease-out;
+}
+input:placeholder-shown{
+    font-size: 13px;
+    border: none;
+}
+input:invalid{
+    border-color:  #509CDB;
+}
+.button{
+    height: 35px;
+    width: 190px;
+    border: none;
+    box-shadow: inset -1px 1px 3px grey,
+                 inset 1px -1px 3px white;
+    border-radius: 5px;  
+    font-size: 15px;
+    font-weight: bolder;
+    margin-top: 20px;
+    cursor: pointer;
+    background:  #509CDB;
+}
+.button:hover{
+    background: white;
+    color: #509CDB;
+}
+p{
+    font-size: 12px;
+}
+.p1{
+    padding: 10px;
+    margin: 15px;
+}
+.p2{
+    padding: 10px;
+}
