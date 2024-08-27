@@ -1,6 +1,8 @@
 body{
-    background-image: url(../img/Visuel-campus-SQY-030423-768x512-1.png);
+    background-image: url(/auth/img/Visuel-campus-SQY-030423-768x512-1.png);
+    background-size: cover;
     background-attachment: fixed;
+    background-position: center;
 }
 h1{
     font-size: 50px;
@@ -27,7 +29,7 @@ form{
     height: 400px;
     width: 370px;
     box-shadow: -1px 1px 3px grey,
-                 1px -1px 3px white;
+                 1px -1px 3px black;
     border-radius: 5px;   
     font-family: Arial, Helvetica, sans-serif;          
 }
@@ -37,7 +39,7 @@ form{
     padding: 10px;
     margin: 15px;
     box-shadow: inset -1px 1px 3px grey,
-                 inset 1px -1px 3px white;
+                 inset 1px -1px 3px black;
     border-radius: 5px;  
     font-size: 15px;
     font-weight: bold;
@@ -56,7 +58,7 @@ input:invalid{
     width: 190px;
     border: none;
     box-shadow: inset -1px 1px 3px grey,
-                 inset 1px -1px 3px white;
+                 inset 1px -1px 3px black;
     border-radius: 5px;  
     font-size: 15px;
     font-weight: bolder;
