@@ -37,3 +37,18 @@ body {
     justify-self: right;
 }
 
+
+
+body > section {
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+main {
+    overflow-x: scroll;
+}
+
+header {
+    margin-right: 30px;
+}
+
