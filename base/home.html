@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Accueil</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../base/css/style.css">
-    <link rel="stylesheet" href="./css/create.css/">
+    <link rel="stylesheet" href="../base/css/home.css">
 </head>
 
 <body class="row vh-100 m-0 p-0">
@@ -17,21 +17,21 @@
     <section class="side_bar col-2 d-flex flex-column px-0 vh-100">
         <!-- À ne pas modifier -->
         <div class="logo-div d-flex flex-column align-items-center gap-3 py-4">
-            <div class="logo_ensitech" style="background-image: url('../base/img/ensitech_logo.jpeg');"></div>
+            <div class="logo_ensitech" style="background-image: url('./img/ensitech_logo.jpeg');"></div>
             <h3 class="text-white">Ensitech</h3>
         </div>
         <div class="side_bar_link p-4">
             <ul class="list-unstyled">
                 <li class="text-white"><a href="../base/index.html"
-                        class="p-2 d-flex text-decoration-none justify-content-between rounded"><span
-                            class="d-flex gap-3"><i class="bi bi-house"></i>Accueil</span></a></li>
+                        class="p-2 d-flex text-decoration-none justify-content-between rounded active-sibar-item"><span
+                            class="d-flex gap-3"><i class="bi bi-house"></i>Accueil</span><i
+                            class="bi bi-caret-right-fill my-arrow"></i></a></li>
                 <li class="text-white"><a href="#"
                         class="p-2 d-flex text-decoration-none justify-content-between rounded"><span
                             class="d-flex gap-3"><i class="bi bi-people"></i>Enseignant</span></a></li>
                 <li class="text-white"><a href="../etudiant/index.html"
-                        class="p-2 d-flex text-decoration-none justify-content-between rounded active-sibar-item"><span
-                            class="d-flex gap-3"><i class="bi bi-mortarboard"></i>Étudiant</span><i
-                            class="bi bi-caret-right-fill my-arrow"></i></a></li>
+                        class="p-2 d-flex text-decoration-none justify-content-between rounded"><span
+                            class="d-flex gap-3"><i class="bi bi-mortarboard"></i>Étudiant</span></a></li>
                 <li class="text-white"><a href="../cours/index.html"
                         class="p-2 d-flex text-decoration-none justify-content-between rounded"><span
                             class="d-flex gap-3"><i class="bi bi-journal-text"></i>Cours</span></a></li>
@@ -62,60 +62,41 @@
         <main class="m-5">
             <!-- Contenu du document à modifier -->
 
-            <h1>Étudiants</h1>
+            <h1>Bienvenue sur le dashboard</h1>
+            <p>Vous êtes connecté en tant que Directeur à Ensitech</p>
 
             <div class="container bg-white p-5 rounded mt-5">
-                <h2>Ajouter Étudiants</h2>
-                <h6 class="my-3">Manuellement</h6>
-                <div class="col w-75">
-                    <div class="row p-2">
-                        <div class="col">
-                            <label for="">Nom</label>
-                            <input class="form-control form-control-lg col-6 fs-6" type="text"
-                                aria-label=".form-control-lg example">
+                <div class="col">
+                    <a href="#" class="d-flex align-items-start gap-5 px-5 py-3 text-decoration-none text-black">
+                        <div class="icon-div p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="var(--primary-color-1)" class="bi bi-person-fill-add" viewBox="0 0 16 16">
+                                <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0m-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                                <path d="M2 13c0 1 1 1 1 1h5.256A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1 1.544-3.393Q8.844 9.002 8 9c-5 0-6 3-6 4"/>
+                              </svg>
                         </div>
-                        <div class="col">
-                            <label for="">Prénom</label>
-                            <input class="form-control form-control-lg col-6 fs-6" type="text"
-                                aria-label=".form-control-lg example">
+                        <div class="action-element-div">
+                            <h4>Ajouter des étudiants</h4>
+                            <p>Cliquez ici pour commencer à enregistrer vos élèves.
+                                Ajoutez vos premiers étudiants à la base de données.
+                                Enregistrez les informations de vos nouveaux élèves.</p>
                         </div>
-                    </div>
-                    <div class="row p-2">
-                        <div class="col">
-                            <label for="">Adresse mail</label>
-                            <input class="form-control form-control-lg col-6 fs-6" type="email"
-                                aria-label=".form-control-lg example">
+                    </a>
+                    <a href="#" class="d-flex align-items-start gap-5 px-5 py-3 text-decoration-none text-black">
+                        <div class="icon-div p-2">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="var(--primary-color-1)" class="bi bi-journal-text" viewBox="0 0 16 16">
+                                <path d="M5 10.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"/>
+                                <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2"/>
+                                <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z"/>
+                              </svg>
                         </div>
-                        <div class="col">
-                            <label for="">Numéro de téléphone</label>
-                            <input class="form-control form-control-lg col-6 fs-6" type="tel"
-                                aria-label=".form-control-lg example">
-                        </div>
-                    </div>
-                    <div class="row p-2">
-                        <div class="col">
-                            <label for="">Adresse</label>
-                            <input class="form-control form-control-lg col-6 fs-6" type="text"
-                                aria-label=".form-control-lg example">
-                        </div>
-                        <div class="col d-flex gap-5">
-                            <div class="p-0">
-                                <label for="">Date de naissance</label>
-                                <input class="form-control form-control-lg col-6 fs-6" type="datetime"
-                                    aria-label=".form-control-lg example">
-                            </div>
-                            <div class="p-0">
-                                <label for="">Genre</label>
-                                <input class="form-control form-control-lg col-6 fs-6" type="text"
-                                    aria-label=".form-control-lg example">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-end p-2 mt-3">
-                    <button type="button" class="btn btn-primary w-25 create-next-btn">Enregistrer</button>
-                    </div>
-                </div>
+                        <div class="action-element-div">
+                            <h4>Ajouter des cours</h4>
+                            <p>Prêt à remplir votre emploi du temps ? Cliquez ici pour créer de nouveaux cours et les personnaliser à votre guise. C'est simple et rapide !
 
+                            </p>
+                        </div>
+                    </a>
+                </div>
             </div>
 
             <!-- Fin du contenu -->
