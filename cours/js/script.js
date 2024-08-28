@@ -97,7 +97,10 @@ document.getElementById("delete_course_link").onclick = (e) => {
 document.getElementById("update_course_link").onclick = (e) => {
   const selectedInput = document.querySelector(".form-check-input:checked");
   if (selectedInput) {
-    localStorage.setItem("cours_to_modify", selectedInput.getAttribute("cours_theme"));
+    localStorage.setItem(
+      "cours_to_modify",
+      selectedInput.getAttribute("cours_theme")
+    );
   } else {
     e.preventDefault();
   }
