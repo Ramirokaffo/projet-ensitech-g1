@@ -15,12 +15,13 @@
         <h1 class="text-white text-center mt-3 page_head_text fw-bold">Bienvenue c'est un plaisir de vous revoir</h1>
         <div class="container my-5 bg-white w-25 p-5 rounded shadow-lg">
             <h1 class="self-align-start mb-4 text-center">Connexion</h1>
+            <div id="liveAlertPlaceholder"></div>
             <div class="row my-3">
                 <input class="form-control form-control-lg col-6 fs-6 my-2" type="email" placeholder="Email"
-                    aria-label=".form-control-lg example">
+                    aria-label=".form-control-lg example" id="email_input">
                 <input class="form-control form-control-lg col-6 fs-6 my-2" type="password" placeholder="Mot de passe"
-                    aria-label=".form-control-lg example">
-                <a type="button" href="../base/home.html" class="btn w-100 text-white create-next-btn my-2">Continuer</a>
+                    aria-label=".form-control-lg example" id="password_input">
+                <a type="button" id="login_btn" href="../base/home.html" class="btn w-100 text-white create-next-btn my-2">Continuer</a>
             </div>
             <div class="already_connect_div text-center">
                 <div class="d-flex gap-1 d-inline-block">
@@ -31,6 +32,7 @@
             </div>
         </div>
     </main>
+    <script src="./js/login.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
