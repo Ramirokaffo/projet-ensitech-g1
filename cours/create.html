@@ -57,6 +57,7 @@
         </ul>
       </div>
     </header>
+    <div class="mx-5" id="liveAlertPlaceholder"></div>
 
     <main class="m-5">
       <!-- Contenu du document à modifier -->
@@ -68,14 +69,14 @@
         <div class="col w-50">
           <div class="col my-3">
             <label for="">Thème</label>
-            <input class="form-control form-control-lg col-6 fs-6" type="text" aria-label=".form-control-lg example">
+            <input class="form-control form-control-lg col-6 fs-6" type="text" aria-label=".form-control-lg example" id="them_input">
           </div>
           <div class="col my-3">
             <label for="">Nombre d'heures</label>
-            <input class="form-control form-control-lg col-6 fs-6" type="number" aria-label=".form-control-lg example">
+            <input class="form-control form-control-lg col-6 fs-6" type="number" aria-label=".form-control-lg example" id="hour_input">
           </div>
           <div class="d-flex justify-content-end p-2 mt-3">
-            <a href="./index.html" type="button" class="btn btn-primary w-25 create-next-btn">Enregistrer</a>
+            <a href="./index.html" type="button" class="btn btn-primary w-25 create-next-btn" id="create_cours_link">Enregistrer</a>
           </div>
         </div>
       </div>
@@ -83,6 +84,7 @@
       <!-- Fin du contenu -->
     </main>
   </section>
+  <script src="./js/create.js"></script>
   <script src="../base/js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

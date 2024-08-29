@@ -71,6 +71,43 @@ class Cours {
     }
   }
 
+  static searchCourse(query) {
+    // Methode qui permet de rechercher tous les cours dans le stockage local
+    const listeCoursString = localStorage.getItem("cours");
+    if (listeCoursString) {
+      var listeCours = listeCoursString.split("&%&%@");
+      listeCours = listeCours.filter((e) =>
+        e.toLowerCase().includes(query.toLowerCase())
+      );
+
+      return listeCours.map((cours) => {
+        const oneCoursList = cours.split("^*^*^");
+        return new Cours(
+          oneCoursList[0],
+          oneCoursList[1],
+        );
+      });
+    } else {
+      return [];
+    }
+  }
+
+
+  static showSearchResultOnDom(query) {
+    // Supprime et affiche le resultat de la recherche sur l'interface
+    const list_course_table = document.getElementById("list_cours_table");
+    while (list_course_table.firstChild) {
+      list_course_table.removeChild(list_course_table.firstChild);
+    }
+    for (const element of Cours.searchCourse(query)) {
+      const myTd = document.createElement("tr");
+      myTd.innerHTML = `<th scope="row"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" cours_theme="${element.theme}"></th>
+                      <td>${element.theme}</td>
+                      <td>${element.hour}</td>`;
+      list_course_table.append(myTd);
+    }
+  }
+
   static removeCourseOnDom(theme) {
     const selectedCourseInput = document.querySelector(
       `input[cours_theme="${theme}"]`
@@ -82,7 +119,19 @@ class Cours {
   }
 }
 
-Cours.showAllCourseOnDom();
+
+const searchInput = document.getElementById("exampleDataList");
+
+const searchQuery = localStorage.getItem("coursSearchQuery");
+if (searchQuery) {
+  searchInput.value = searchQuery;
+  localStorage.removeItem("coursSearchQuery");
+  Cours.showSearchResultOnDom(searchQuery);
+} else {
+  Cours.showAllCourseOnDom();
+}
+
+
 
 document.getElementById("delete_course_link").onclick = (e) => {
   const selectedInput = document.querySelector(".form-check-input:checked");
@@ -103,5 +152,13 @@ document.getElementById("update_course_link").onclick = (e) => {
     );
   } else {
     e.preventDefault();
+  }
+};
+
+
+document.getElementById("search_btn").onclick = (e) => {
+  if (searchInput.value) {
+    localStorage.setItem("coursSearchQuery", searchInput.value);
+    window.location.href = "index.html";
   }
 };

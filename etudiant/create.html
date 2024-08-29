@@ -58,6 +58,7 @@
                 </ul>
             </div>
         </header>
+        <div class="mx-5" id="liveAlertPlaceholder"></div>
 
         <main class="m-5">
             <!-- Contenu du document à modifier -->
@@ -72,47 +73,47 @@
                         <div class="col">
                             <label for="">Nom</label>
                             <input class="form-control form-control-lg col-6 fs-6" type="text"
-                                aria-label=".form-control-lg example">
+                                aria-label=".form-control-lg example" id="first_name">
                         </div>
                         <div class="col">
                             <label for="">Prénom</label>
                             <input class="form-control form-control-lg col-6 fs-6" type="text"
-                                aria-label=".form-control-lg example">
+                                aria-label=".form-control-lg example" id="last_name">
                         </div>
                     </div>
                     <div class="row p-2">
                         <div class="col">
                             <label for="">Adresse mail</label>
                             <input class="form-control form-control-lg col-6 fs-6" type="email"
-                                aria-label=".form-control-lg example">
+                                aria-label=".form-control-lg example" id="email">
                         </div>
                         <div class="col">
                             <label for="">Numéro de téléphone</label>
                             <input class="form-control form-control-lg col-6 fs-6" type="tel"
-                                aria-label=".form-control-lg example">
+                                aria-label=".form-control-lg example" id="phone_number">
                         </div>
                     </div>
                     <div class="row p-2">
                         <div class="col">
                             <label for="">Adresse</label>
                             <input class="form-control form-control-lg col-6 fs-6" type="text"
-                                aria-label=".form-control-lg example">
+                                aria-label=".form-control-lg example" id="address">
                         </div>
                         <div class="col d-flex gap-5">
                             <div class="p-0">
                                 <label for="">Date de naissance</label>
                                 <input class="form-control form-control-lg col-6 fs-6" type="date"
-                                    aria-label=".form-control-lg example">
+                                    aria-label=".form-control-lg example" id="born_date">
                             </div>
                             <div class="p-0">
                                 <label for="">Genre</label>
                                 <input class="form-control form-control-lg col-6 fs-6" type="text"
-                                    aria-label=".form-control-lg example">
+                                    aria-label=".form-control-lg example" id="gender">
                             </div>
                         </div>
                     </div>
                     <div class="d-flex justify-content-end p-2 mt-3">
-                        <a href="./index.html" type="button" class="btn btn-primary w-25 create-next-btn">Enregistrer</a>
+                        <a href="./index.html" type="button" class="btn btn-primary w-25 create-next-btn" id="create_student_link">Enregistrer</a>
                     </div>
                 </div>
 
@@ -122,6 +123,7 @@
         </main>
     </section>
   <script src="../base/js/script.js"></script>
+  <script src="./js/create.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
