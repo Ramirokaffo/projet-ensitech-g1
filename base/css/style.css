@@ -7,6 +7,7 @@
 
 body {
     background-color: var(--primary-color-5);
+    /* justify-content: stretch; */
 }
 
 .side_bar {
@@ -52,3 +53,8 @@ header {
     margin-right: 30px;
 }
 
+
+.chart-div {
+    background-color: white;
+    border-radius: 5px;
+}
