@@ -19,15 +19,14 @@
     <section class="side_bar col-2 d-flex flex-column px-0 vh-100">
         <!-- À ne pas modifier -->
         <div class="logo-div d-flex flex-column align-items-center gap-3 py-4">
-            <div class="logo_ensitech" style="background-image: url('./img/ensitech_logo.jpeg');"></div>
+            <div class="logo_ensitech" style="background-image: url('../base/img/ensitech_logo.jpeg');"></div>
             <h3 class="text-white">Ensitech</h3>
         </div>
         <div class="side_bar_link p-4">
             <ul class="list-unstyled">
                 <li class="text-white"><a href="../base/index.html"
-                        class="p-2 d-flex text-decoration-none justify-content-between rounded active-sibar-item"><span
-                            class="d-flex gap-3"><i class="bi bi-house"></i>Accueil</span><i
-                            class="bi bi-caret-right-fill my-arrow"></i></a></li>
+                        class="p-2 d-flex text-decoration-none justify-content-between rounded"><span
+                            class="d-flex gap-3"><i class="bi bi-house"></i>Accueil</span></a></li>
                 <li class="text-white"><a href="../enseignant/index.html"
                         class="p-2 d-flex text-decoration-none justify-content-between rounded"><span
                             class="d-flex gap-3"><i class="bi bi-people"></i>Enseignant</span></a></li>
@@ -37,6 +36,10 @@
                 <li class="text-white"><a href="../cours/index.html"
                         class="p-2 d-flex text-decoration-none justify-content-between rounded"><span
                             class="d-flex gap-3"><i class="bi bi-journal-text"></i>Cours</span></a></li>
+                <li class="text-white"><a href="../stat/index.html"
+                        class="p-2 d-flex text-decoration-none justify-content-between rounded active-sibar-item"><span
+                            class="d-flex gap-3"><i class="bi bi-bar-chart"></i>Statistiques</span><i
+                            class="bi bi-caret-right-fill my-arrow"></i></a></li>
             </ul>
         </div>
     </section>
@@ -97,75 +100,75 @@
                     <div class="d-flex flex-column gap-2 col-3">
                         <div class="chart-div">
                             <canvas id="myChart2"></canvas>
-                        <script>
-                            const ctx2 = document.getElementById('myChart2');
-                            const data = {
-                                labels: [
-                                    'Génie logiciel',
-                                    'Sécurité Informatique',
-                                    'Base de données',
-                                    'Gestion de projet',
-                                ],
-                                datasets: [{
-                                    label: 'Pourcentage de réussite',
-                                    data: [30, 50, 80, 35],
-                                    backgroundColor: [
-                                        'rgb(255, 99, 132)',
-                                        'rgb(54, 162, 235)',
-                                        'rgb(255, 205, 86)',
-                                        'rgb(55, 5, 86)',
+                            <script>
+                                const ctx2 = document.getElementById('myChart2');
+                                const data = {
+                                    labels: [
+                                        'Génie logiciel',
+                                        'Sécurité Informatique',
+                                        'Base de données',
+                                        'Gestion de projet',
                                     ],
-                                    hoverOffset: 4
-                                }]
-                            };
-                            new Chart(ctx2, {
-                                  type: 'doughnut',
-                                data: data,
-                                options: {
-                                    scales: {
-                                        y: {
-                                            beginAtZero: true
+                                    datasets: [{
+                                        label: 'Pourcentage de réussite',
+                                        data: [30, 50, 80, 35],
+                                        backgroundColor: [
+                                            'rgb(255, 99, 132)',
+                                            'rgb(54, 162, 235)',
+                                            'rgb(255, 205, 86)',
+                                            'rgb(55, 5, 86)',
+                                        ],
+                                        hoverOffset: 4
+                                    }]
+                                };
+                                new Chart(ctx2, {
+                                    type: 'doughnut',
+                                    data: data,
+                                    options: {
+                                        scales: {
+                                            y: {
+                                                beginAtZero: true
+                                            }
                                         }
                                     }
-                                }
-                            });
-                        </script>
+                                });
+                            </script>
                         </div>
                         <div class="chart-div">
                             <canvas id="myChart3"></canvas>
-                        <script>
-                            const ctx3 = document.getElementById('myChart3');
-                            const data3 = {
-                                labels: [
-                                    'Génie logiciel',
-                                    'Sécurité Informatique',
-                                    'Base de données',
-                                    'Gestion de projet',
-                                ],
-                                datasets: [{
-                                    label: 'Pourcentage de réussite',
-                                    data: [30, 50, 80, 35],
-                                    backgroundColor: [
-                                        'rgb(255, 99, 132)',
-                                        'rgb(54, 162, 235)',
-                                        'rgb(255, 205, 86)',
-                                        'rgb(55, 5, 86)',
+                            <script>
+                                const ctx3 = document.getElementById('myChart3');
+                                const data3 = {
+                                    labels: [
+                                        'Génie logiciel',
+                                        'Sécurité Informatique',
+                                        'Base de données',
+                                        'Gestion de projet',
                                     ],
-                                    hoverOffset: 4
-                                }]
-                            };
-                            new Chart(ctx3, {
-                                  type: 'doughnut',
-                                data: data,
-                                options: {
-                                    scales: {
-                                        y: {
-                                            beginAtZero: true
+                                    datasets: [{
+                                        label: 'Pourcentage de réussite',
+                                        data: [30, 50, 80, 35],
+                                        backgroundColor: [
+                                            'rgb(255, 99, 132)',
+                                            'rgb(54, 162, 235)',
+                                            'rgb(255, 205, 86)',
+                                            'rgb(55, 5, 86)',
+                                        ],
+                                        hoverOffset: 4
+                                    }]
+                                };
+                                new Chart(ctx3, {
+                                    type: 'doughnut',
+                                    data: data,
+                                    options: {
+                                        scales: {
+                                            y: {
+                                                beginAtZero: true
+                                            }
                                         }
                                     }
-                                }
-                            });
-                        </script>
+                                });
+                            </script>
                         </div>
                     </div>
                 </div>
